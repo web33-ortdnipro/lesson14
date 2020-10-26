@@ -1,0 +1,57 @@
+
+    body {
+        font-size: 28px;
+    }
+
+    .gridbox-header {
+        grid-area: header;
+        background-color: aqua;
+    }
+
+    .gridbox-sidebar {
+        grid-area: sidebar;
+        background-color: goldenrod;
+    }
+
+    .gridbox-banner {
+        grid-area: banner;
+        display: none;
+        background-color: coral;
+    }
+
+    .gridbox-main {
+        grid-area: main;
+        background-color: burlywood;
+    }
+
+    .gridbox-footer {
+        grid-area: footer;
+        background-color: darkorchid;
+    }
+
+    .gridbox {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:    "header"
+                                "sidebar"
+                                "main"
+                                "footer";
+    }
+
+    @media (min-width:768px){
+        .gridbox{
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:    "header header header"
+                                    "sidebar main banner"
+                                    "footer footer footer";
+        }
+
+        .gridbox-banner {
+            display: block;
+        }
+    }
+
+    
+
