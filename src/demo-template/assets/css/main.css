@@ -1,34 +1,51 @@
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'JetBrains Mono' ;
+}
+
 main > div { 
     text-align: center; 
-    font-size: 32pt; 
+    font-size: 3rem; 
     color: white;
 }
 
-.cell-a{
+main > div> * {
+    text-align: left;
+    color: black;
+    font-size: 1rem;
+}
+
+main > div:nth-child(1){
     background: red;
 }
 
-.cell-b{
+main > div:nth-child(2){
     background: green;
 }
 
-.cell-c{
+main > div:nth-child(3){
     background: blue;
 }
 
-.cell-d{
+main > div:nth-child(4){
     background: chocolate;
 }
 
-.cell-e{
+main > div:nth-child(5){
     background: orange;
 }
 
-.cell-f{
+main > div:nth-child(6){
     background: indigo;
 }
 
-.cell-g{
+main > div:nth-child(7){
     background: maroon;
 }
 

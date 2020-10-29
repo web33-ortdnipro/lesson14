@@ -1,6 +1,24 @@
 
+    @font-face{
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+            url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+            url('../fonts/JetBrainsMono-Regular.woff') format('woff'),
+            url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     body {
-        font-size: 28px;
+        font-family: 'JetBrains Mono' ;
+    }
+
+    .gridbox > * {
+        font-size: 2rem;
+    }
+
+    .gridbox > * > * {
+        font-size: 1rem;
     }
 
     .gridbox-header {
